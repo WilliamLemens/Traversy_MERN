@@ -1,0 +1,31 @@
+{
+  "name": "traversy_mern",
+  "version": "1.0.0",
+  "description": "Working through Traversy Media's MERN tutorial",
+  "main": "server.js",
+  "scripts": {
+    "client-install": "npm install --prefix client",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WilliamLemens/Traversy_MERN.git"
+  },
+  "author": "William Lemens",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/WilliamLemens/Traversy_MERN/issues"
+  },
+  "homepage": "https://github.com/WilliamLemens/Traversy_MERN#readme",
+  "dependencies": {
+    "concurrently": "^5.1.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.10"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  }
+}
